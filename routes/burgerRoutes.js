@@ -6,7 +6,7 @@ router.get('/burgers', (req, res) =>
 );
 
 router.get('/burgers/:id', (req, res) =>
-  Burger.getBurgersWhere({ id: req.params.id }, (song) => res.json(burger))
+  Burger.getBurgersWhere({ id: req.params.id }, (burger) => res.json(burger))
 );
 
 router.post('/burgers', (req, res) =>

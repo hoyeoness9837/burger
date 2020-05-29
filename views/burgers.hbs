@@ -1,20 +1,29 @@
 <h1>EAT DA BURGER!</h1>
+<img src="./burgerimg.webp" alt="">
 
-<form>
-  <p>
-    <label for="burgername">Burger name</label>
-    <input type="text" name="burgername" id="fe-burgername">
-  </p>
-  <button id="fe-addburger">Add Burger</button>
-</form>
-
-<ol id="fe-burgers">
-  {{#each burgers }}
-  <li>
-    {{this.burger_name}}
-    <button class="devourBurger" data-id="{{this.id}}">Devour it</button>
+<div class="container">
+  <div id="fe-burgers">
+    {{#each burgers }}
+    <li>
+      {{this.burger_name}}
+      <button class="devourBurger" data-id="{{this.id}}" value="{{this.burger_name}}">Devour it !</button>
     </li>
-  {{/each}}
-</ol>
+    {{/each}}
+  </div>
+  <form>
+    <span>
+      <label for="burgername"></label>
+      <input type="text" name="burgername" placeholder="burger name" id="fe-burgername">
+    </span>
+    <button id="fe-addburger">Add Burger</button>
+  </form>
+  <div id="fe-devoured">
+    {{#each devoured}}
+    <li>
+      {{this.burger_name}}
+    </li>
+    {{/each}}
+  </div>
+</div>
 
 <script src="./burger.js"></script>

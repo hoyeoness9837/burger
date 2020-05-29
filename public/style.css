@@ -1,0 +1,34 @@
+:root {
+  background-color: orange;
+}
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  block-size: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: baseline;
+}
+
+li {
+  list-style-type: "\1F354";
+}
+
+form {
+  padding: 31px;
+  border: 2px solid rgba(255, 0, 21, 0.301);
+  border-radius: 8px;
+}
+
+#fe-burgers,
+#fe-devoured {
+  padding: 20px;
+}

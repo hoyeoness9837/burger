@@ -9,7 +9,7 @@ router.post('/burgers', (req, res) =>
   Burger.addBurger(req.body, (info) => res.json(info))
 );
 
-router.put('/movies/:id', (req, res) =>
+router.put('/burgers/:id', (req, res) =>
   Burger.updateBurger(req.body, { id: req.params.id }, (info) => res.json(info))
 );
 

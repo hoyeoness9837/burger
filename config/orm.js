@@ -3,7 +3,7 @@
 //     * `selectAll()``insertOne()` `updateOne()`
 const db = require('./connection');
 
-const orm = {
+module.exports = {
   selectAll(table, cb) {
     db.query(`SELECT * FROM ${table}`, (err, data) => {
       if (err) {

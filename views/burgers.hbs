@@ -5,11 +5,11 @@
     <label for="burgername">Burger name</label>
     <input type="text" name="burgername" id="fe-burgername">
   </p>
-  <button id="fe-addburger">Add Song</button>
+  <button id="fe-addburger">Add Burger</button>
 </form>
 
 <ol id="fe-burgers">
-  {{#each fe-burgers }}
+  {{#each burgers }}
   <li>
     {{this.burger_name}}
     <button class="devourBurger" data-id="{{this.id}}">Devour it</button>
@@ -17,4 +17,4 @@
   {{/each}}
 </ol>
 
-<script src="./burgers.js"></script>
+<script src="./burger.js"></script>

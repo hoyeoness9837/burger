@@ -5,6 +5,9 @@ module.exports = {
   getBurgers(cb) {
     orm.selectAll('burgers', (burgers) => cb(burgers));
   },
+  getBurgersWhere (where, cb) {
+    orm.selectAllWhere('burgers', where, burgers => cb(burgers))
+  },
   addBurger(burger, cb) {
     orm.insertOne('burgers', burger, (info) => cb(info));
   },
